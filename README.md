@@ -170,3 +170,30 @@ export default function useDelete({ url, payload, Reload }) {
     return [res, callAPI];
 }
 ```
+
+
+How to use them?
+
+useFetch.js
+
+```js
+const posts = useFetch(getMainURL)
+```
+
+usePost.js
+
+```js
+const [res, fnc] = usePost({ url: API, payload, Reload })
+```
+
+usePut.js
+
+```js
+const [res, fnc] = usePut({ url: API, payload, Reload })
+```
+
+useDelete.js
+
+```js
+const [res, fnc] = useDelete({ url: API, payload, Reload })
+```
